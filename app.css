@@ -1,5 +1,40 @@
 h1 {
-    color : red;
+    font-size: 45px;
+    font-family: Arial, sans-serif; /* Example font family */
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 50px; /* Add some top margin for spacing */
+    color: #feffff;
 }
 
-body{ background-color: blue;}
+body{ 
+    background-color: #2b7a78;
+}
+
+nav {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav a {
+    color: #feffff; /* Set the color of the text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+p {
+    font-size: 20px;
+    color:#feffff;
+    margin-left: 50px; 
+}
