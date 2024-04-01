@@ -1,0 +1,3 @@
+function altertButton() {
+ alert("hello");   
+}
