@@ -57,12 +57,23 @@ https://www.tooplate.com/view/2120-ben-resume
     --border-radius-large:  100%;
     --border-radius-medium: 80px;
     --border-radius-small:  40px;
+    
+
+    --background-color: white;
+    --background-color-notableskills: white;
+    --background-color-prjHeader: #F7F7F7;
+    --background-color-prjText: white;
+
+    /* --background-color: powderblue;
+    --background-color-notableskills: honeydew;
+    --background-color-prjHeader: rgb(215, 230, 215);
+    --background-color-prjText: honeydew; */
   }
 
 
   body {
     font-family: var(--base-font-family);
-    background-color: white;
+     background-color: var(--background-color); /* background color of the page */
   }
 
 
@@ -351,11 +362,11 @@ https://www.tooplate.com/view/2120-ben-resume
 
 
   /*---------------------------------------
-     FAQ                 
+     Projects and Experiences
   -----------------------------------------*/
-
   .faq .card-header {
     padding: 0;
+     background: var(--background-color-prjHeader); /*header color */
   }
 
   .faq .btn-link {
@@ -375,6 +386,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .faq .card-body {
     padding: 2rem;
+    background: var(--background-color-prjText); /*text background color */
   }
 
   .faq-info-text {
@@ -385,11 +397,11 @@ https://www.tooplate.com/view/2120-ben-resume
 
 
   /*---------------------------------------
-     TESTIMONIALS               
+      notable skills               
   -----------------------------------------*/
 
   .testimonials {
-    background: #f9f9f9;
+    background: var(--background-color-notableskills); /* background of the notable skills */
   }
 
   .testimonials-image {
