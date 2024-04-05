@@ -36,8 +36,8 @@ https://www.tooplate.com/view/2120-ben-resume
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
 
-    --gray-color:           #909090;
-    --p-color:              #7d7a7a;
+    --gray-color:           #909090; /*top bar text color */
+    --p-color:              #d6d6d6; /*raw text color */
 
     --base-font-family:     "Plain", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --font-weight-bold:     600;
@@ -59,15 +59,16 @@ https://www.tooplate.com/view/2120-ben-resume
     --border-radius-small:  40px;
     
 
-    --background-color: white;
-    --background-color-notableskills: white;
-    --background-color-prjHeader: #F7F7F7;
-    --background-color-prjText: white;
+    --background-color: #2c2b30;
+    --background-color-notableskills: #4f4f51;
+    --background-color-prjHeader: #4f4f51;
+    --background-color-prjText: #2c2b30;
 
-    /* --background-color: powderblue;
-    --background-color-notableskills: honeydew;
-    --background-color-prjHeader: rgb(215, 230, 215);
-    --background-color-prjText: honeydew; */
+    --h3-font-color : #ffff;
+    --h6-font-color : #ffff;
+    --proj-exe-font-color : #ffff;
+    --hover-color : #f58f7c
+
   }
 
 
@@ -96,6 +97,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   h3 {
     font-size: var(--h3-font-size);
+    color: var(--h3-font-color);
   }
 
   h4 {
@@ -109,6 +111,7 @@ https://www.tooplate.com/view/2120-ben-resume
   h6 {
     font-weight: var(--font-weight-bold);
     font-size: var(--h6-font-size);
+    color: var(--h6-font-color);
   }
 
   p {
@@ -118,6 +121,24 @@ https://www.tooplate.com/view/2120-ben-resume
     letter-spacing: 0.3px;
     line-height: 2em;
   }
+
+  span{
+    color: var(--h6-font-color);
+  }
+
+  li{
+    color: var(--h6-font-color);
+  }
+
+  li strong + a {
+    color: var(--h6-font-color); /* Change the color of the */
+  }
+
+  p a {
+    color: var(--h6-font-color);  /* Change the color of the link  */
+}
+
+  
 
   .section-padding {
     padding: 6rem 0;
@@ -175,7 +196,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   a:hover  {
-    color: var(--dark-color);
+    color: var(--hover-color);
     text-decoration: none;
   }
 
@@ -216,7 +237,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .contact-form #submit-button:hover,
   .navbar .custom-btn:hover {
-    background: var(--dark-color);
+    background: var(--hover-color);
     color: var(--white-color);
   }
 
@@ -227,7 +248,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .nav-item .nav-link.active, 
   .nav-item .nav-link:hover {
-    color: var(--gray-color);
+    color: var(--hover-color);
   }
 
   .nav-item .nav-link.active, 
@@ -370,7 +391,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   .faq .btn-link {
-    color: var(--dark-color);
+    color: var(--proj-exe-font-color); 
     font-size: var(--h6-font-size);
     text-align: left;
     display: block;
@@ -380,7 +401,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .faq .btn-link:focus, 
   .faq .btn-link:hover {
-    color: var(--dark-color);
+    color: var(--hover-color);
     text-decoration: none;
   }
 
@@ -413,7 +434,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   .testimonials-info {
-    width: 100%;
+    width: 100%
   }
 
   .testimonials .owl-theme .owl-nav.disabled+.owl-dots {
@@ -428,11 +449,19 @@ https://www.tooplate.com/view/2120-ben-resume
     width: 30px;
     height: 3px;
     margin: 5px;
+    
   }
 
   .testimonials .owl-theme .owl-dots .owl-dot.active span, 
   .testimonials .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--primary-color);
+  }
+
+  .testimonials-tag{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
 
